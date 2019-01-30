@@ -1,0 +1,70 @@
+
+.daohang-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+    left: 5px;
+  top: 5px;
+  border-radius: 10rpx;
+  margin: auto;
+  background-size: 30px 30px;
+  background-repeat:no-repeat;
+  background: transparent;
+}
+.daohang-button::after{
+  border: none;
+}
+.daohang-button-hover {
+  border-radius: 10rpx;
+} 
+.title{
+  position: absolute;
+  color: #000000; 
+  height: 30rpx;
+  width: 450rpx;
+  top: 5px;
+  left: 120px;
+  font-size: 22px;
+  font-family: Arial;
+}
+
+.userinfo {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #aaa;  */
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  position: absolute;
+  color:white;
+  width: 128rpx;
+  height: 24rpx;
+  font-size: 24rpx;
+  margin-top: 145rpx;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuinfo{
+  position: absolute;
+  margin-top: 120rpx;
+}
+.wc{
+  color: white;
+  padding: 30rpx 0 30rpx 40rpx;
+}
+.page-content{
+  padding-top: 50rpx; /*侧边栏上间距*/
+}

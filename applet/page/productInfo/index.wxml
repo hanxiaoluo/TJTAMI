@@ -1,0 +1,27 @@
+
+<import src="../../util/util.wxml"/>
+<import src="../../page/first/index.wxml"/>
+
+<view class="page">
+  <!-- 下层导航栏 -->
+  <view class="page-bottom">
+    <template is="commonBottom" data="{{imageUrl:imageUrl,pNameText:pNameText}}"/> 
+  </view>
+  <!-- 上层具体页面 -->
+  <view class="page-top {{open ? 'c-state1' : ''}}" style="{{translate}}">
+    <view class="first" bindtap='firstClick'>
+      <template is="common" data="{{pBackgroundImg:pBackgroundImg}}"/> 
+    </view>
+  </view>
+  <!-- 产品详情 -->
+  <view class="info">
+    <text class="productName">小罗1号</text>
+    <!-- {{productName}} -->
+    <text class="productTime">发布时间:{{productTime}}</text>
+    <image class="produceImage" mode="aspectFill" src="../../images/background.jpg"></image>
+    <textarea class="productText" maxlength="-1" value="{{productInitText}}"></textarea>    
+  </view>
+</view>
+
+
+

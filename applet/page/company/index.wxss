@@ -1,0 +1,22 @@
+/* page/company/index.wxss */
+@import "../../util/util.wxss";
+
+.xiaov1{
+  position: absolute;
+  top: 80rpx;
+  width: 100%;
+  height: 380rpx;
+}
+.companyText{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 460rpx;
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  background-color: #F4F4F4;
+}
+.c-state1{ 
+ transform: rotate(0deg) scale(1) translate(31%,0%);  
+ -webkit-transform: rotate(0deg) scale(1) translate(31%,0%);  
+}

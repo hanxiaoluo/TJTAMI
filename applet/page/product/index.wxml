@@ -1,0 +1,50 @@
+
+<import src="../../util/util.wxml"/>
+<import src="../../page/first/index.wxml"/>
+
+<view class="page">
+  <!-- 下层导航栏 -->
+  <view class="page-bottom">
+    <template is="commonBottom" data="{{imageUrl:imageUrl,pNameText:pNameText}}"/> 
+  </view>
+  <!-- 上层具体页面 -->
+  <view class="page-top {{open ? 'c-state1' : ''}}" style="{{translate}}">
+    <view class="first" bindtap='firstClick'>
+      <template is="common" data="{{pBackgroundImg:pBackgroundImg}}"/> 
+    </view>
+    <!-- 搜索框 -->
+    <view class="page_row">
+      <view class="search">
+        <view class="df search_arr">
+          <icon class="searchcion" size='20' type='search'></icon>
+          <input class="" placeholder="请输入关键字" value="{{searchValue}}"/>
+        </view>
+      </view>
+      <view class="sousuo" bindtap="suo">搜索</view>
+    </view>
+    <!-- 所有产品 -->
+    <scroll-view class="scrollView" scroll-y="true" style="top: 160rpx;"  bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{infoContent}}" scroll-top="{{scrollTop}}">
+      <view class="infoContent">
+        <view class="oneProduct">
+          <image id="xiaoluo1" class="xiaoluo1" mode="aspectFill" bindtap="produceInfo" src="../../images/1.jpg"></image>
+          <text>小罗1号</text>
+        </view>
+        <view class="twoProduct">
+          <image id="xiaov1"  class="xiaov1" mode="aspectFill"  bindtap="produceInfo" src="../../images/2.jpg"></image>
+          <text>小薇1号</text>
+        </view>
+        <view class="threeProduct">
+          <image id="xiaov3" class="xiaov3" mode="aspectFill"  bindtap="produceInfo" src="../../images/3.jpg"></image>
+          <text>小薇3号</text>
+        </view>
+        <view class="fourProduct">
+          <image id="xiaov5" class="xiaov5" mode="aspectFill"  bindtap="produceInfo" src="../../images/4.jpg"></image>
+          <text>小薇5号</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+
+

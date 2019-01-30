@@ -1,0 +1,69 @@
+
+<import src="../../util/util.wxml"/>
+
+<view class="page">
+    <!-- 底部页面（导航侧边栏） -->
+    <view class="page-bottom">
+      <template is="commonBottom" data="{{imageUrl:imageUrl,pNameText:pNameText}}"/> 
+    </view>
+    <!-- 顶层页面（内容详情页面） -->
+    <view class="page-top {{open ? 'c-state1' : ''}}" style="{{translate}}">
+      <!-- 导航按钮、标题 -->
+      <view class="first" bindtap='firstClick'>
+        <template is="common" data="{{pBackgroundImg:pBackgroundImg,pNameText:pNameText}}"/> 
+      </view>
+
+      <scroll-view class="scrollView" scroll-y="true" style="top: 80rpx;"  bindscrolltolower="lower" bindscroll="scroll"
+        scroll-into-view="{{liuyan}}" scroll-top="{{scrollTop}}">
+        <!-- 图片轮播 -->
+        <swiper class="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true"> 
+            <block wx:for="{{arr}}" wx:key="xxx"> 
+              <swiper-item> 
+                <image src="{{item}}" class="slide-image" width="400" height="150"/> 
+              </swiper-item> 
+            </block> 
+        </swiper>
+        <!-- 功能按钮 -->
+        <view class="btnGroup">
+          <button id="company" class="companyBtn" hover-class="companyBtn_hover" bindtap="first_btnIndex_clicked">公司简介</button>
+          <button id="product" class="productBtn" hover-class="productBtn_hover" bindtap="first_btnIndex_clicked">产品展厅</button>
+          <button id="news" class="newsBtn" hover-class="newsBtn_hover" bindtap="first_btnIndex_clicked">新闻中心</button>
+          <button id="contact" class="contactBtn" hover-class="contactBtn_hover" bindtap="first_btnIndex_clicked">联系方式</button>
+        </view>
+        <!-- 产品展厅 -->
+        <view class="information">
+          <text class="infoTitle">产品展厅</text>
+          <view class="infoContent">
+            <view class="oneProduct">
+              <image class="xiaoluo1" mode="aspectFill" src="../../images/1.jpg"></image>
+              <text>小罗1号</text>
+            </view>
+            <view class="twoProduct">
+              <image class="xiaov1" mode="aspectFill"  src="../../images/2.jpg"></image>
+              <text>小薇1号</text>
+            </view>
+            <view class="threeProduct">
+              <image class="xiaov3" mode="aspectFill"  src="../../images/3.jpg"></image>
+              <text>小薇3号</text>
+            </view>
+            <view class="fourProduct">
+              <image class="xiaov5" mode="aspectFill"  src="../../images/4.jpg"></image>
+              <text>小薇5号</text>
+            </view>
+            <button id="product" class="moreBtn" hover-class="productBtn_hover" bindtap="first_btnIndex_clicked">查看更多</button>
+          </view>
+        </view>
+        <!-- 留言板 -->
+        <view class="liuyan">
+          <text class="liutitle">留言板</text>
+          <view class="liuyanContent">
+            <input class="telinput" type="number" maxlength="11" placeholder="请输入电话～"></input>
+            <!--  -->
+            <input class="emailinput" placeholder="请输入邮箱～"></input>
+            <textarea class="jianyi" placeholder="请输入你的建议~"></textarea>
+            <button class="tijiao">提交</button>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+</view>

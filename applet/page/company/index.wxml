@@ -1,0 +1,18 @@
+
+<import src="../../util/util.wxml"/>
+<import src="../../page/first/index.wxml"/>
+
+<view class="page">
+  <!-- 下层导航栏 -->
+  <view class="page-bottom">
+    <template is="commonBottom" data="{{imageUrl:imageUrl,pNameText:pNameText}}"/> 
+  </view>
+  <!-- 上层具体页面 -->
+  <view class="page-top {{open ? 'c-state1' : ''}}" style="{{translate}}">
+    <view class="first" bindtap='firstClick'>
+      <template is="common" data="{{pBackgroundImg:pBackgroundImg}}"/> 
+    </view>
+    <image class="xiaov1" mode="scaleToFill"  src="../../images/background.jpg"></image>
+    <textarea class="companyText" maxlength="-1" value="{{companyInitText}}"></textarea>                                            
+  </view>
+</view>

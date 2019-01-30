@@ -1,0 +1,31 @@
+
+<template name="commonBottom">
+  <view class="page-content">
+      <view class="userinfo">
+        <image class="userinfo-avatar" src="{{imageUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{pNameText}}</text>
+      </view>
+      <view class="menuinfo">
+        <view  class="wc">
+          <text bindtap="first_clicked">首页</text>
+        </view>
+        <view  class="wc">
+            <text bindtap="company_clicked">公司简介</text>
+        </view>
+        <view  class="wc">
+            <text bindtap="product_clicked">产品展厅</text>
+        </view>
+        <view  class="wc">
+            <text bindtap="news_clicked">新闻中心</text>
+        </view>
+        <view  class="wc">
+            <text bindtap="contact_clicked">联系方式</text>
+        </view>
+      </view>
+  </view>
+</template>
+
+<template name="common">
+    <button class="daohang-button"  bindtap="tap_ch" hover-class="daohang-button-hover" style="background-image: url({{pBackgroundImg}})"></button>
+    <view class="title">天津塔米智能科技</view>
+</template>

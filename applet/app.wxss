@@ -1,0 +1,22 @@
+page,.page {
+
+  height: 100%;
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+}
+.page-bottom{
+  height: 100%;
+  width: 250rpx;
+  position: fixed; 
+  background-color: rgb(0, 68, 97);
+  z-index: 0;
+}
+
+.page-top{
+  height: 100%;
+  position: fixed;
+  width: 750rpx;
+  background-color: #ffffff;
+  z-index: 0;
+  transition: All 0.4s ease; 
+  -webkit-transition: All 0.4s ease;
+}

@@ -1,0 +1,195 @@
+
+@import "../../util/util.wxss";
+page{
+  width: 100%;
+  height: 100%;
+}
+
+.first {
+  position: fixed;
+  overflow-x: hidden;
+  width: 100%;
+  height: 80rpx;
+  top: 0;
+  right: 0;
+  z-index: 0;
+  /* background-color: rebeccapurple; */
+}
+
+.scrollView{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #F4F4F4;
+} 
+
+.swiper {
+  position: absolute;
+  height: 380rpx;
+  width: 100%; 
+  top: 0rpx;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.btnGroup {
+  position: relative;
+  height: 80rpx;
+  margin-top: 400rpx; 
+  padding: 5rpx;
+  display: flex;
+  flex-direction: row;
+}
+.companyBtn{
+  position: relative;
+  /* width: 150rpx; */
+  height:80rpx;
+  top: 2rpx;
+  /* padding-left: 0rpx; */
+  /* font-size: 18rpx; */
+}
+.companyBtn_hover {
+  background-color: red;
+  color: white;
+}
+
+.productBtn{
+  position: relative;
+  /* width: 150rpx; */
+  height:80rpx;
+  top: 2rpx;
+  left: 5rpx;
+}
+.productBtn_hover {
+  background-color: red;
+  color: white;
+}
+.newsBtn{
+  position: relative;
+  /* width: 150rpx; */
+  height:80rpx;
+  top: 2rpx;
+  left: 5rpx;
+}
+.newsBtn_hover {
+  background-color: red;
+  color: white;
+}
+.contactBtn{
+  position: relative;
+  /* width: 150rpx; */
+  height:80rpx;
+  top: 2rpx;
+  left: 5rpx;
+}
+.contactBtn_hover {
+  background-color: red;
+  color: white;
+}
+
+.information {
+  position: relative;
+  top: 5rpx;
+  height: 65%;
+  /* background-color: #aaa; */
+}
+.infoTitle {
+  font-size: 48rpx;
+  color: #DC143C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #aaa; */
+}
+
+.infoContent{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  align-content:flex-start;
+  overflow: hidden;
+  /* background-color: darkkhaki; */
+}
+.oneProduct,.twoProduct,.threeProduct,.fourProduct{
+  display:flex;
+  width: 300rpx;
+  height: 300rpx;
+  flex-direction: column;
+  text-align: center;
+  margin: 20rpx;
+  margin-bottom: 0;
+  color: #B5B5B5;
+}
+.xiaoluo1,.xiaov1,.xiaov3,.xiaov5{
+  width: 300rpx;
+  height: 300rpx;
+}
+.moreBtn{
+  width: 200rpx;
+  height: 80rpx;
+}
+.liuyan{
+  position: relative;
+  top: 45rpx; 
+  width: 100%;
+  height: 100%;
+  /* margin: 30rpx; */
+}
+.liutitle{
+  font-size: 48rpx;
+  color: #DC143C;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-bottom: 20rpx;
+  /* background-color: #aaa; */
+}
+.liuyanContent{
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* align-items: flex-end; */
+  /* justify-content: center;
+  align-content:flex-start; */
+  /* overflow: hidden; */
+  width: 100%;
+  height: 100%;
+  /* padding: 20rpx; */
+  /* background-color: gold; */
+}
+.telinput,.emailinput{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 80rpx;
+  border-radius: 5rpx;
+  border-width: 2rpx;
+  border-color: red;
+  margin: 20rpx;
+  background-color:white;
+}
+.jianyi{
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 300rpx;
+  margin: 20rpx;
+  background-color: white;
+}
+.tijiao{
+  width: 200rpx;
+  height: 80rpx;
+}
+.c-state1{ 
+ transform: rotate(0deg) scale(1) translate(31%,0%);  
+ -webkit-transform: rotate(0deg) scale(1) translate(31%,0%);  
+}
+

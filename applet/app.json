@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "page/login/index",
+    "page/first/index",
+    "page/company/index",
+    "page/news/index",
+    "page/contact/index",
+    "page/product/index",
+    "page/search/index",
+    "page/productInfo/index"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "天津塔米",
+    "navigationBarBackgroundColor": "#FF0000",
+    "backgroundColor": "#FF34B3",
+    "backgroundTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "resizable": true
+}
