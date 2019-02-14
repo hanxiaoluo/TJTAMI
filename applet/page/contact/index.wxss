@@ -6,6 +6,23 @@
   height: 380rpx;
   top: 80rpx;
 }
+.ditu {
+  position: absolute;
+  left: 30rpx;
+  right: 30rpx;
+  height: 380rpx;
+  top: 480rpx;
+}
+.addr {
+  position: relative;
+  color: red;
+}
+.addrText {
+  position: relative;
+  color: red;
+  font-size: 8px;
+}
+
 .c-state1{ 
  transform: rotate(0deg) scale(1) translate(31%,0%);  
  -webkit-transform: rotate(0deg) scale(1) translate(31%,0%);  
