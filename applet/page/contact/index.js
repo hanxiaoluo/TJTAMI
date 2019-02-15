@@ -11,11 +11,21 @@ Page({
     markers: [{
       iconPath: '../../images/marker.png',
       id: 0,
-      label:'天津塔米智能科技',
       latitude: 38.9763059613,
       longitude: 117.4151731486,
       width: 25,
-      height: 30
+      height: 30,
+
+      callout: {
+        content: '天津塔米智能科技',
+        fontSize: 14,
+        bgColor: "#AFEEEE",
+        borderWidth: 1,
+        borderColor: "#CCC",
+        padding: 4,
+        display: "ALWAYS",
+        textAlign: "center"
+      }
     }]
   },
 
