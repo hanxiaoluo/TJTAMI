@@ -11,6 +11,7 @@
   <view class="page-top {{open ? 'c-state1' : ''}}" style="{{translate}}">
     <view class="first" bindtap='firstClick'>
       <template is="common" data="{{pBackgroundImg:pBackgroundImg}}"/> 
-    </view>                                            
+    </view>
+    <image class="contactImage" mode="scaleToFill"  src="../../images/background.jpg"></image>                                            
   </view>
 </view>

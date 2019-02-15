@@ -1,5 +1,12 @@
 @import "../../util/util.wxss";
 
+.contactImage {
+  position: absolute;
+  width: 100%;
+  height: 380rpx;
+  top: 0rpx;
+}
+
 .c-state1{ 
  transform: rotate(0deg) scale(1) translate(31%,0%);  
  -webkit-transform: rotate(0deg) scale(1) translate(31%,0%);  
